@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bd60cdc3e4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Noto Serif', serif;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url("https://www.pixelstalk.net/wp-content/uploads/images6/4K-Travel-Wallpaper-HD-Free-download.jpg");
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+    color: rgb(0, 183, 255);
+}
+.header img{
+    width: 220px;
+    float: left;
+    left: -25%;
+}
+.login-btn{
+   text-decoration: none; 
+   width: 100px;
+   padding: 8px 0;
+   outline: none ;
+   border: 2px solid #ff17ec;
+   border-radius: 50px;
+   background: transparent;
+   color: #fff;
+   float: right;
+   font-family: 'Courier New', Courier, monospace;
+}
+.header h1{
+    padding-top: 260px;
+    padding-bottom: 0;
+    font-size:55px;
+    -webkit-text-stroke: rgb(0, 0, 0) 2px;
+}
+.header p{
+    margin: 10px 0;
+    color: #22aaff;
+}
+.input-group{
+    width: 90%;
+    max-width: 500px;
+    border-radius: 30px;
+    background: #fff;
+    margin: auto;
+    padding: 2px;
+    background-color: blanchedalmond;
+    color: #fff;
+}
+.form-control{
+    border: 0  !important;
+    border-radius: 30px !important;
+    margin: 2px;
+    box-shadow: none !important;
+    background-color: rgb(100, 237, 216);
+    color: #fff;
+}
+.input-group-text{
+    width: 100px;
+    height: 40px;
+    background-image: linear-gradient(#ff17ec,#1f2d90);
+    border: 0 !important;
+    color: #fff !important;
+    padding: 0 25px !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+    float: right;
+}
+ 
+ .features{
+    padding: 100px 0; 
+    height: 100%;
+    background-image: url(https://images.pexels.com/photos/872831/pexels-photo-872831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 14%;
+    color:#fff;
+    
+ }
+ h1{
+    text-align: center;
+    padding-bottom: 30px;
+    
+ }
+
+.feature-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+ }
+ .price{
+    width: 50px;
+    height: 50px;
+    background: #ff5722;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px 1px rgba(37,73,214,0.18);
+    position: absolute;
+    left: 20px;
+    bottom: -25px;
+ }
+ .feature-img{
+    position: relative;
+
+ }
+ .rating{
+    padding: 3px;
+    float: right;
+    background-color: #fff;
+    bottom: -1px;
+    right: 0;
+    position: absolute;
+ }
+ .features .fa-solid{
+    font-size: 15px;
+    color: #ff5722;
+ } 
+ .feature-details{
+    padding: 20px;
+   text-align: justify;
+ }
+ .feature-details h4{
+     
+    font-weight: 600;
+    margin-top: 20px;
+    color: #fff;
+ }
+ .feature-details p{
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+ }
+ .feature-details .fa-solid {
+    margin-right: 5px;
+    color: #ff5722;
+    background: rgba(0, 0, 0, 0.7);
+ }
+ .feature-details span{
+    background: rgba(0, 0, 0, 0.7);
+ }
+ .gallery{
+    padding: 100px 0;
+    background: #9a9a9a; 
+ }
+ .gallery-box img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+ }
+ .gallery-box img:hover{
+    transform: scale(1.1);
+
+ }
+ .gallery-box h4{
+    display: block;
+    color: #fff;
+    text-shadow: -2px 2px 2px #000;
+    font-weight: 600;
+    font-size: 20PX;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+ .gallery-box{
+    position: relative;
+    margin-bottom: 30PX;
+ }
+ .banner{
+    height: 100%;
+    background-image: url(https://media.istockphoto.com/id/691225570/photo/dusk-summer-sunset-beach-hut-night.jpg?s=612x612&w=0&k=20&c=9svcasEVNfnH7ceZB1-heG-rWHlZAwagWaW8Ck0v-X8=);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 14%;
+ }
+ .banner-highlights{
+    padding: 70px 0;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+ }
+ .booking-btn{
+    width: 120px;
+    padding: 8px 0;
+    outline: none !important;
+    border:  2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+
+ }
+ .booking-btn:hover{
+    background: #ff5722;
+ }
+ .user-feedback{
+    padding: 100px 0;
+
+ }
+ .user-review{
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
+    padding-bottom: 50px;
+    background: rgba(255, 182, 193, 0.388);
+    border-radius: 20px;
+ }
+ .user-review p{
+    padding: 50px 10px 10px 10px;
+ }
+ .user-feedback img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    margin: -30px 0 10px 175px;
+ }
+ .footer{
+    padding: 100px 20px 20px;
+    background-image: linear-gradient(#2d557d,#9610fb);
+    color: #fff;
+ }
+.footer-logo{
+    width: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.footer h4{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.footer p{
+    font-size: 18px;
+    text-align: justify;
+    padding-right: 35px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer .row .fa-solid {
+    padding-right: 20px;
+    font-size: 15px;
+    color: #ff5722;
+}
+.footer .row .fa-brands{
+    color: aqua;
+}
+.footer hr{
+    margin-top: 10px;
+    background: #efefef;
+}
+.footer .copyright{
+    text-align: center;
+}
+.pic{
+    height: 300px;
+
+}
+
+
+</style>
+<body>
+    <section class="header">
+        <div class="container">
+            <img src="C:\Users\DHEERAJ\Downloads\travel-logo-design-template-f9436cf10bcd13ff0200437def611194_screen-removebg-preview.png">
+            
+            <button type="button" class="login-btn"><a href="file:///C:/Users/DHEERAJ/OneDrive/Desktop/HTML/html%20project/Tourism_login.html">Login</a></button>
+        </div>
+        <h1><q>Time To Tour </q></h1>
+        <p> Spend your time with your near and dear onces</p>
+        <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Country ,Place or City">   
+       <div class="input-group-append">
+        <button type="submit" class="input-group-text">Search</button>
+        </div>
+        </div>
+    </section>
+    <section class="features">
+        <h1>Features Destinations</h1>
+        <div class="container">
+            <div class="row"> 
+                <div class="col-md-4">
+                    <div class=" feature-box">
+                        <div class="feature-img">
+                           <a href="file:///C:/Users/DHEERAJ/OneDrive/Desktop/HTML/html%20project/india.html" target="_blank"> <img src="https://img.freepik.com/free-vector/india-background_1284-22033.jpg" alt="India"></a>
+                             <div class="price">
+                                <p>78$</p>
+
+                             </div>   
+                             <div class="rating"> 
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                
+                             </div>  
+                        </div>
+                        <div class="feature-details">
+                            <h4>India</h4>
+                 <p>  India is a great country where people speak different languages but the national language is Hindi. India is full of different castes, creeds, religion, and cultures but they live together. That's the reasons India is famous for the common saying of “unity in diversity“.</p>
+                    <div>
+                        <span><i class="fa-solid fa-location-dot"></i> India</span>
+                        <span><i class="fa-solid fa-sun"></i> 4 days </span>
+                        <span><i class="fa-regular fa-moon"></i>3 nights</span>
+                    </div>
+                        </div>
+
+                    </div>
+
+                </div>
+ <div class="col-md-4">
+                <div class=" feature-box">
+                    <div class="feature-img">
+                        <div class="pic">
+                       <a href="file:///C:/Users/DHEERAJ/OneDrive/Desktop/HTML/html%20project/Russia.html" target="_blank"> <img src="https://thumbs.dreamstime.com/b/russia-vector-logo-design-template-moscow-city-abstract-flat-illustration-55415840.jpg" alt="RUSSIA"  ></a>
+                       </div>
+                         <div class="price">
+                            <p>86$</p>
+
+                         </div>   
+                         <div class="rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            
+                         </div>  
+                    </div>
+                    <div class="feature-details">
+                        <h4>RUSSIA</h4>
+             <p> Russia contains Europe's longest river, the Volga, and its largest lake, Ladoga. Russia also is home to the world's deepest lake, Baikal, and the country recorded the world's lowest temperature outside the North and South poles. The inhabitants of Russia are quite diverse.</p>
+                <div>
+                    <span><i class="fa-solid fa-location-dot"></i> Russia</span>
+                    <span><i class="fa-solid fa-sun"></i> 4 days </span>
+                    <span><i class="fa-regular fa-moon"></i>3 nights</span>
+                </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+ <div class="col-md-4">
+                <div class=" feature-box">
+                    <div class="feature-img">
+                     <a href="file:///C:/Users/DHEERAJ/OneDrive/Desktop/HTML/html%20project/australia.html" target="_blank">   <img src="https://thumbs.dreamstime.com/b/australia-landmark-global-travel-journey-paper-background-vector-design-template-used-your-advertisement-book-banner-143964183.jpg" alt="Australia"></a>
+                         <div class="price">
+                            <p>98$</p>
+
+                         </div>   
+                         <div class="rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            
+                         </div>  
+                    </div>
+                    <div class="feature-details">
+                        <h4>Australia</h4>
+             <p>Australia is globally famous for its natural wonders, wide-open spaces, beaches, deserts, "The Bush", and "The Outback". Australia is one of the world's most highly urbanised countries; it's well known for its attractive mega cities such as Sydney, Melbourne, Brisbane, and Perth.</p>
+                <div>
+                    <span><i class="fa-solid fa-location-dot"></i> Australia</span>
+                    <span><i class="fa-solid fa-sun"></i> 4 days </span>
+                    <span><i class="fa-regular fa-moon"></i>3 nights</span>
+                </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </div>
+    
+
+
+
+   
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class=" feature-box">
+                        <div class="feature-img">
+                         <a href="file:///C:/Users/DHEERAJ/OneDrive/Desktop/HTML/html%20project/america.html" target="_blank">   <img src="https://msinus.in/wp-content/uploads/2020/10/Tourist-Attractions-in-the-USA_-Best-Places-to-Visit-1.png" alt="london bredge"></a>
+                             <div class="price">
+                                <p>78$</p>
+
+                             </div>   
+                             <div class="rating"> 
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                
+                             </div>  
+                        </div>
+                        <div class="feature-details">
+                            <h4>America</h4>
+                 <p> America is the most powerful country in the world. America is the short form of the United States of America. Believe it or not there are almost 313 religions in America. This country is so diverse that there are so many subcultures residing in the United States of America. America is best stated as North America and South America according to a new webster’s dictionary.</p>
+                    <div>
+                        <span><i class="fa-solid fa-location-dot"></i> America</span>
+                        <span><i class="fa-solid fa-sun"></i> 4 days </span>
+                        <span><i class="fa-regular fa-moon"></i>3 nights</span>
+                    </div>
+                        </div>
+
+                    </div>
+
+                </div>
+ <div class="col-md-4">
+                <div class=" feature-box">
+                    <div class="feature-img">
+                       <a href="file:///C:/Users/DHEERAJ/OneDrive/Desktop/HTML/html%20project/europe.html" target="_blank"> <img src="https://wallpaperaccess.com/full/1856051.jpg" alt="london bredge" ></a>
+                         <div class="price">
+                            <p>86$</p>
+
+                         </div>   
+                         <div class="rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            
+                         </div>  
+                    </div>
+                    <div class="feature-details">
+                        <h4>Europe</h4>
+             <p> Europe's rich agricultural and industrial diversity has made the continent a center of trade and commerce for centuries. It is centrally located between the two other “Old World” continents, Africa and Asia.Europe is the second smallest continent in size but the third largest in population.</p>
+                <div>
+                    <span><i class="fa-solid fa-location-dot"  ></i> Europe</span>
+                    <span><i class="fa-solid fa-sun"></i> 4 days </span>
+                    <span><i class="fa-regular fa-moon"></i>3 nights</span>
+                </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+ <div class="col-md-4">
+                <div class=" feature-box">
+                    <div class="feature-img">
+                     <a href="file:///C:/Users/DHEERAJ/OneDrive/Desktop/HTML/html%20project/Africa.html" >   <img src=" https://i.pinimg.com/originals/d7/6d/2e/d76d2e87dd9b181fcd4f394b8d57baa3.jpg" alt="Africa"></a>
+                         <div class="price">
+                            <p>98$</p>
+
+                         </div>   
+                         <div class="rating"> 
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            
+                         </div>  
+                    </div>
+                    <div class="feature-details">
+                        <h4>Africa</h4>
+             <p> Africa is sometimes nicknamed the "Mother Continent" due to its being the oldest inhabited continent on Earth. Humans and human ancestors have lived in Africa for more than 5 million years. Africa, the second-largest continent, is bounded by the Mediterranean Sea, the Red Sea, the Indian Ocean, and the Atlantic Ocean.</p>
+                <div>
+                    <span><i class="fa-solid fa-location-dot"></i> Africa</span>
+                    <span><i class="fa-solid fa-sun"></i> 4 days </span>
+                    <span><i class="fa-regular f a-moon"></i>3 nights</span>
+                </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+        </div>
+
+</section>
+
+
+
+
+
+
+
+  <section class="gallery">
+    <h1> Travelling gallery</h1>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="gallery-box">
+               <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" >
+               <h4>Los Angeles</h4>
+          </div>
+
+    </div>
+    <div class="col-md-3">
+        <div class="gallery-box">
+               <img src="https://plus.unsplash.com/premium_photo-1658526960888-3e3e62cd19de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" >
+               <h4>New York</h4>
+          </div>
+
+    </div>
+
+    <div class="col-md-3">
+        <div class="gallery-box">
+               <img src="https://media.istockphoto.com/id/1254762552/photo/golden-temple-amritsar.jpg?s=612x612&w=0&k=20&c=nxurQLkEe2w4KDqUDRXsROnFkIQoSbCWi4sxU8gCnKw=" >
+               <h4>India</h4>
+          </div>
+
+    </div>
+
+    <div class="col-md-3">
+        <div class="gallery-box">
+               <img src="https://media.istockphoto.com/id/1259152913/photo/woman-sitting-on-cliff-and-using-smartphone-on-lofoten-island-in-snow.jpg?s=612x612&w=0&k=20&c=L5tiZGKDkNY34E34IZL4LuWsJX7pkRreu5Cl-QOg0A0=" >
+               <h4> Russia</h4>
+          </div>
+
+    </div>
+
+    </div>
+
+    </div>
+  </section>
+    <section class="banner">
+        <div class="banner-highlights">
+         <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+                <h2>Get <del><small>30%</small></del> <big>50%</big> on top Destination</h2>
+                <p> Book your tickets before 31st December and avail 30% falt discount.</p>
+            </div>
+            <div class="col-md-4">
+             <button type="button" class="booking-btn">Book Now </button>    
+            </div>
+          </div>  
+         </div>   
+        </div>
+    </section>
+    <section class="user-feedback">
+     <h1>User Review</h1>
+     <div class=" container">
+    <div class="row">
+    <div class="col-md-4">
+        <div class="user-review">
+            <p> Memorable Experience with Holiday Triangle Travel in 8 days Amritsar, Manali -Shimla areas, Chandigarh trip in this Diwali Vacation. I always try to manage trip in Diwali vacations & Summer Vacations, Rohtang travelling was On Your Own Cost in this package , It wii be better to include travelling Charges for Rohtang & Atal Tunnel in package. No one like to bargain with driver in trip. All hotles were good except Hotel Moonlake in Shimla. Room was good but very small /congested .Unable to lay down Extra bed.</p>
+            <h5> Pooja Chandrashekar</h5>
+            <small> Sydney</small>
+        </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCVic0zXCtH1Vl_5u6fAfNMFeKNpwJe4oqN0RGwm33xvBJ9_9tQKT5xg-snP2ifdCd40Q&usqp=CAU" alt="person-1">
+    </div>
+    <div class="col-md-4"> 
+        <div class="user-review">
+            <p>Memorable Experience with Holiday Triangle Travel in 8 days Amritsar, Manali -Shimla areas, Chandigarh trip in this Diwali Vacation. I always try to manage trip in Diwali vacations & Summer Vacations, Rohtang travelling was On Your Own Cost in this package , It wii be better to include travelling Charges for Rohtang & Atal Tunnel in package. No one like to bargain with driver in trip. All hotles were good except Hotel Moonlake in Shimla. Room was good but very small /congested .Unable to lay down Extra bed.</p>
+            <h5> Umar Farooq</h5>
+            <small> Sydney</small>
+        </div>
+        <img src="https://www.bridgeclimb.com/getmedia/180bfcae-43f4-495c-9660-d6bd93a824be/Sam_Smith_2018.jpg" alt="person-1">
+
+</div>
+    <div class="col-md-4"> <div class="user-review">
+        <p> Memorable Experience with Holiday Triangle Travel in 8 days Amritsar, Manali -Shimla areas, Chandigarh trip in this Diwali Vacation. I always try to manage trip in Diwali vacations & Summer Vacations, Rohtang travelling was On Your Own Cost in this package , It wii be better to include travelling Charges for Rohtang & Atal Tunnel in package. No one like to bargain with driver in trip. All hotles were good except Hotel Moonlake in Shimla. Room was good but very small /congested .Unable to lay down Extra bed.</p>
+        <h5>dhoni</h5>
+        <small> Sydney</small>
+    </div>
+    <img src="https://www.bridgeclimb.com/getmedia/180bfcae-43f4-495c-9660-d6bd93a824be/Sam_Smith_2018.jpg" alt="person-1">
+</div>
+    </div>
+
+     </div>
+   </section>
+   <section class="footer">
+    <div class="container">
+       <div class="row">
+        <div class="col-md-3">
+         <img src="C:\Users\DHEERAJ\Downloads\travel-logo-design-template-f9436cf10bcd13ff0200437def611194_screen-removebg-preview.png" class="footer-logo" >
+         <p class="logofont"> Time To Tour</p>
+
+        </div>
+        <div class="col-md-3">
+            <h4><u>Features</u></h4>
+            <p>Deals & Offers</p>
+            <p>Customer Reviews</p>
+            <p> Cancelation Policies</p>
+        </div>
+        <div class="col-md-3">
+            <h4><u>quick response</u></h4>
+            <p><i class="fa-solid fa-square-phone"></i> +91 96038 98666</p>
+            <p> <i class="fa-solid fa-envelope"></i> Dheerajmali113@gamil.com</p>
+            <p> <i class="fa-solid fa-house-user"></i> Phagwara,Punjab</p>
+        </div>
+        <div class="col-md-3">
+            <h4><u>Follow us on</u> </h4>
+            <p><i class="fa-brands fa-facebook"></i> Face book</p >
+            <p> <i class="fa-brands fa-youtube"></i> You tube</p>
+            <p> <i class="fa-brands fa-linkedin"></i> Linked in</p>
+            <p> <i class="fa-brands fa-twitter"></i> Twitter</p> 
+        </div>
+       </div> <hr>
+       <p class="copyright"> Made by @ Dheeraj and team </p>
+    </div>
+
+   </section>
+</body>
+</html>
